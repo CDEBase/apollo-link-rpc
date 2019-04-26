@@ -1,0 +1,49 @@
+{
+  "name": "apollo-link-rpc",
+  "version": "0.0.1",
+  "description": "RPC Link",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "clean": "lerna clean",
+    "prepublish": "npm run build",
+    "lerna": "lerna bootstrap --hoist",
+    "build": "lerna run build --stream",
+    "postversion": "git push --follow-tags",
+    "postinstall": "lerna bootstrap --hoist",
+    "build:watch": "lerna run build:watch --stream",
+    "publish": "npm run lerna:prepublish && lerna publish"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^11.13.7",
+    "jest": "^24.7.1",
+    "lerna": "^3.13.4",
+    "parcel-bundler": "^1.12.3",
+    "reflect-metadata": "^0.1.13",
+    "ts-loader": "^5.4.3",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-client": "^2.5.1",
+    "apollo-link": "^1.2.11",
+    "backo2": "^1.0.2",
+    "bunyan": "^1.8.12",
+    "cors": "^2.8.5",
+    "eventemitter3": "^3.1.0",
+    "express": "^4.16.4",
+    "graphql": "^14.2.1",
+    "graphql-tag": "^2.10.1",
+    "graphql-tools": "^4.0.4",
+    "iterall": "^1.2.2",
+    "lodash": "^4.17.11",
+    "rxjs": "^6.5.1",
+    "symbol-observable": "^1.2.0",
+    "ws": "^6.2.1"
+  }
+}

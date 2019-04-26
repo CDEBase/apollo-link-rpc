@@ -1,0 +1,16 @@
+{
+  "name": "example-server-frontend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@apollo-link-rpc/link-rpc-host": "*",
+    "@apollo-link-rpc/link-rpc-main": "*",
+    "@apollo-link-rpc/transport-websocket": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}

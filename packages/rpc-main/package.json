@@ -1,0 +1,16 @@
+{
+  "name": "@apollo-link-rpc/link-rpc-main",
+  "version": "0.0.1",
+  "description": "RPC Link",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "jest",
+    "build": "NODE_ENV=production webpack",
+    "build:watch": "NODE_ENV=development webpack --watch"
+  },
+  "dependencies": {
+    "@apollo-link-rpc/common": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}
