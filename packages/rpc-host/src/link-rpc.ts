@@ -1,16 +1,14 @@
 import * as Logger from 'bunyan';
 import { ApolloLink, Operation, FetchResult, Observable } from 'apollo-link';
 
-import { RpcTransport } from './rpc-client';
-
 export interface IRPCLinkOptions {
     logger: Logger,
-    transport: RpcTransport,
+    transport: any,
 }
 
 export class RPCLink extends ApolloLink {
     private _logger: Logger;
-    private transport: RpcTransport;
+    private transport: any;
 
     constructor(options: IRPCLinkOptions) {
         super();

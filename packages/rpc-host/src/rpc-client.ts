@@ -218,7 +218,7 @@ export class RpcHostInstance {
         });
     }
 
-    public use(middlewares: Middleware[]): RpcTransport {
+    public use(middlewares: Middleware[]): any {
         middlewares.map((middleware) => {
             if (typeof middleware.applyMiddleware === 'function') {
                 this.middlewares.push(middleware);
