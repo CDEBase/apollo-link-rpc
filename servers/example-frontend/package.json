@@ -7,9 +7,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@apollo-link-rpc/link-rpc-host": "*",
-    "@apollo-link-rpc/link-rpc-main": "*",
-    "@apollo-link-rpc/transport-websocket": "*"
+    "@apollo-link-rpc/link-rpc-host": "^0.0.1",
+    "@apollo-link-rpc/link-rpc-main": "^0.0.1",
+    "@apollo-link-rpc/transport-websocket": "^0.0.1"
   },
   "author": "",
   "license": "ISC"

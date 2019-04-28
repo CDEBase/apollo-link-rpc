@@ -9,7 +9,7 @@
     "build:watch": "NODE_ENV=development webpack --watch"
   },
   "dependencies": {
-    "@apollo-link-rpc/common": "*"
+    "@apollo-link-rpc/common": "^0.0.1"
   },
   "author": "",
   "license": "ISC"
